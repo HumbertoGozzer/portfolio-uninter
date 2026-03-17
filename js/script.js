@@ -40,9 +40,10 @@ form.addEventListener('submit', function(event) {
 //Lógica do Tema 
 const btnTema  = document.getElementById('btnTema');
 btnTema.addEventListener('click', () => {
+    // Alterna a presença da classe 'dark-mode' no elemento body
     document.body.classList.toggle('dark-mode');
 
-    // Muda o texto do botão conforme o tema
+    // Altera o texto interno do botão para refletir o estado do tema
     if (document.body.classList.contains('dark-mode')) {
         btnTema.innerText = 'Tema Claro';
     } else {
@@ -50,15 +51,18 @@ btnTema.addEventListener('click', () => {
     }
 });
 
+// Lógica do botão saiba mais //
+// Seleciona o botão e o parágrafo oculto pelo ID
 const btnSaibaMais = document.getElementById('btnSaibaMais');
 const textoExtra = document.getElementById('textoExtra')
 
 btnSaibaMais.addEventListener('click', () => {
+    
     if (textoExtra.style.display === 'none' || textoExtra.style.display ===""){
-        textoExtra.style.display = 'block'
-        btnSaibaMais.innerText = 'Mostrar Menos';
+        textoExtra.style.display = 'block' //Torna o parágrafo visivel
+        btnSaibaMais.innerText = 'Mostrar Menos'; // Altera o rótulo do botão
     } else {
-        textoExtra.style.display = 'none'
-        btnSaibaMais.innerText = 'Saiba Mais'
+        textoExtra.style.display = 'none' // Esconde o parágrafo novamente
+        btnSaibaMais.innerText = 'Saiba Mais' // Restaura o rótulo original
     }
 });
