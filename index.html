@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Humberto Gozzer | Desenvolvedor ADS</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="img/foto-perfil-menu.png" alt="Foto de perfil Humberto" class="avatar-menu">
+            <span class="nome-usuario">Humberto</span>
+            <ul>
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><button id="btnTema">Alterar Tema</button></li>
+            </ul>
+        </nav>
+    </header>
+
+<main>
+    
+    <section id="sobre">
+        
+        <h2>Sobre Mim</h2>
+        <p>Me chamo Humberto Gozzer da Rosa, tenho 24 anos e sou um Desenvolvedor em formação e entusiasta de tecnologia. No curso de Análise de Desenvolvimento de Sistemas, valorizo o código limpo, a organização técnica, a acessibilidade e a busca por mais conhecimento. Gosto de aprender mais sobre tecnologias seja Software ou seja Hardware a complexidade me fascina e me instiga por mais.</p>
+        <p id="textoExtra" style="display: none;">
+            Tenho como hobbies a leitura, videogames, ouvir musicas, sair com os amigos, entre outras. Tenho uma paixão pela área por conta disso estou sempre em busca de me aprimorar seja com vídeos, práticas ou leituras para que futuramente me consolide como um profissional respeitado.
+        </p>
+        <button id="btnSaibaMais">Saiba Mais</button>
+        
+    </section>
+    
+    <section id="formacao">
+        
+        <h2>Formação</h2>
+        <div class="formacao-item">
+            <h3>Análise e Desenvolvimento de Sistemas</h3>
+            <p><strong>UNINTER</strong> | Cursando (Graduação Tecnológica)</p>
+            <p>Desenvolvendo competências em lógica de programação, estruturas de dados e desenvolvimento de sistemas funcionais.</p>
+        </div>
+
+        <div class="formacao-item">
+            <h3>Idiomas</h3>
+            <p>Inglês: Básico / Intermediário (Leitura técnica).</p>
+        </div>
+
+        <div class="formacao-item">
+            <h3>Ensino Médio</h3>
+            <p>Completo</p>
+        </div>
+        
+        
+    </section>
+    
+    <section id="portfolio">
+
+        <h2>Meus Projetos</h2>
+        <div class="portfolio-grid">
+            
+            <div class="projeto-card">
+                <div class="gif-container">
+                    <img src="img/fundamentos.gif" alt="Projeto de Fundamentos" class="img-projeto">
+                </div>
+                <h3>Fundamentos de Desenvolvimento de Software</h3>
+                <p>Este projeto representa o marco inicial da minha trajetória em ADS, servindo como base prática para a consolidação de conceitos essencias HTML, CSS e JVScript. A página foi desenvolvida com o foco na compreensão da estrutura de tecnologias Front-end. Além do desenvolvimento técnico da interface, este trabalho marcou meu primeiro contato com o fluxo de trabalho profissional, utilizando GitHub para o versionamento do código e para a disponibilização(deploy) da aplicação em ambiente real.</p>
+                <div class="projeto-links">
+                    <a href="https://humbertogozzer.github.io/Trabalho-Humberto/" target="_blank" class="btn-principal">Acessar Projeto</a>
+                    <a href="https://github.com/HumbertoGozzer/Trabalho-Humberto" target="_blank" class="btn-secundario">Github</a>
+                </div>
+            </div>
+
+            <div class="projeto-card">
+                <div class="gif-container">
+                    <img src="img/seguranca.gif" alt="Projeto Segurança MEI" class="img-projeto">
+                </div>
+                <h3>Segurança para MEI</h3>
+                <p>Landing page interativa sobre cibersegurança focada em microempreendedores. Esta foi minha primeira Atividade Extensionista, onde o objetivo central  foi a inclusão digital. Aqui busquei ser o mais objetivo e simples possivel para que até mesmo uma pessoa de idade avançada ou com pouca familiariedade tecnologica conseguisse entender sem complicações e em um curto periodo de tempo. No conteudo aprofundei  meus estudos sobre o assunto, unindo conhecimentos prévios adquiridos através de documentários que se provaram de grande ajuda para o enriquecer o conteudo da página. No desenvolvimento do código priorizei padrões de acessibilidade para garantir que a interface fosse inclusiva para todos os usuários, obtendo um resultado sólido tanto em usabilidade quanto em desempenho.</p>
+                <div class="projeto-links">
+                    <a href="https://humbertogozzer.github.io/Seguranca-mei/" target="_blank" class="btn-principal">Acessar Projeto</a>
+                    <a href="https://github.com/HumbertoGozzer/Seguranca-mei" target="_blank" class="btn-secundario">Github</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section id="contato">
+        
+        <h2>Contato</h2>
+        <form id="formContato" novalidate>
+            
+            <input type="text" id="nome" placeholder="Seu Nome">
+            <input type="email" id="email" placeholder="Seu E-mail">
+            <textarea id="mensagem" placeholder="Sua Mensagem"></textarea>
+            <button type="submit">Enviar</button>
+            
+        </form>
+        
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Humberto - RU: 5418533</p>
+</footer>
+
+<script src="js/script.js"></script>
+    
+</body>
+</html>
